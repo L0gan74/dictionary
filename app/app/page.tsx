@@ -38,7 +38,7 @@ export default function Home() {
           />
           <button type="submit">Кнопка</button>
         </form>
-        <HomeCell words={words} />
+        {words.length > 0 ? <HomeCell words={words} /> : null}
       </div>
     </main>
   );
